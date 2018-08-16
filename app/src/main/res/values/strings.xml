@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MyLanguagesApp</string>
+    <string name="ImageV">imageView</string>
+    <string name="TxT1">textView1</string>
+    <string name="TxT2">textView"</string>
+    <string name="List_view_Numbers">NumberListView</string>
+    <string name="LisT_view_Colors">ColorListView</string>
+</resources>
