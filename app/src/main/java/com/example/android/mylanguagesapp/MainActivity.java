@@ -14,20 +14,20 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Log.d(RENDER_ISSUES , "lets see what happes here");
+        Log.d(RENDER_ISSUES , "lets see what happens here");
 
     }
     public void colorButton(View view)
     {
         Intent intent;
-        intent = new Intent(MainActivity.this, ColorActivity.class);
+        intent = new Intent(this, ColorActivity.class);
         startActivity(intent);
     }
 
     public void NumbersButton(View view)
     {
         Intent intent1;
-        intent1 = new Intent(MainActivity.this, NumbersActivity.class);
+        intent1 = new Intent(this, NumbersActivity.class);
         startActivity(intent1);
     }
 }

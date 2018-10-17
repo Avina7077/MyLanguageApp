@@ -1,40 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".MainActivity"
-    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:layout_weight="1"
+    android:orientation="vertical">
 
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-<TextView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    tools:text="Numbers"
-    android:layout_marginTop="16dp"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:text="Numbers"
+        android:layout_margin="16dp"
+        android:background="@color/category_numbers"
         android:onClick="NumbersButton"
+        android:text="Numbers" />
 
-        android:layout_marginTop="16dp"/>
     <TextView
-
-        android:layout_marginTop="16dp"
-        tools:text="Phrases"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    <TextView
-        tools:text="Colors"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@color/category_phrases"
+        android:text="Phrases" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@color/category_colors"
         android:onClick="colorButton"
-        android:layout_marginTop="16dp"/>
+        android:text="Colors" />
+
     <TextView
-        tools:text="Family"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
-        android:layout_marginTop="16dp"/>
+        android:layout_marginTop="16dp"
+        android:background="@color/category_family"
+        android:text="Family" />
 </LinearLayout>
