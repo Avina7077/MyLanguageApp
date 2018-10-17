@@ -5,4 +5,7 @@
     <string name="TxT2">textView"</string>
     <string name="List_view_Numbers">NumberListView</string>
     <string name="LisT_view_Colors">ColorListView</string>
+    <string name="activity_phrases">Phrases Activity</string>
+    <string name="family_list">Family Activity</string>
+    <string name="ImageBox">This is the Image</string>
 </resources>

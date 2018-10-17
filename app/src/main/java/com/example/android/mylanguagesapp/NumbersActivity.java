@@ -2,11 +2,13 @@ package com.example.android.mylanguagesapp;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.widget.ListView;
 
 import java.util.ArrayList;
 
 public class NumbersActivity extends AppCompatActivity {
+    String ACTIVITY_MONITOR = " com.example.android.mylanguagesapp";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -14,24 +16,28 @@ public class NumbersActivity extends AppCompatActivity {
         setContentView(R.layout.activity_numbers);
 
 
-    //TextView textView = findViewById(R.id.TxT1)
-    ArrayList<Lingo> lingoArray = new ArrayList<Lingo>();
-    lingoArray.add(new Lingo ("ofu","one",1));
-    lingoArray.add(new Lingo("Abou","two",2));
-    lingoArray.add(new Lingo("Ato","three",3));
-    lingoArray.add(new Lingo("Ano","four",4));
-    lingoArray.add(new Lingo("Ise","five",5));
-    lingoArray.add(new Lingo("Isi","six",6));
-    lingoArray.add(new Lingo("Asa","seven",7));
-    lingoArray.add(new Lingo("Asato","eight",8));
-    lingoArray.add(new Lingo("Itenani","nine",9));
-    lingoArray.add(new Lingo("Iri","ten",10));
+        ArrayList<Lingo> lingoArray = new ArrayList<Lingo>();
+        lingoArray.add(new Lingo("ofu","one", R.drawable.number_one));
+        lingoArray.add(new Lingo("Abou", "two", R.drawable.number_two));
+        lingoArray.add(new Lingo("Ato", "three", R.drawable.number_three));
+        lingoArray.add(new Lingo("Ano", "four", R.drawable.number_four));
+        lingoArray.add(new Lingo("Ise", "five", R.drawable.number_five));
+        lingoArray.add(new Lingo("Isi", "six", R.drawable.number_six));
+        lingoArray.add(new Lingo("Asa", "seven", R.drawable.number_seven));
+        lingoArray.add(new Lingo("Asato", "eight", R.drawable.number_eight));
+        lingoArray.add(new Lingo("Itenani", "nine", R.drawable.number_nine));
+        lingoArray.add(new Lingo("Iri", "ten", R.drawable.number_ten));
 
 
-    LingaAdapter ling = new LingaAdapter(this, lingoArray);
+        LingaAdapter ling = new LingaAdapter(this, lingoArray);
 
-    ListView lstV = (ListView) findViewById(R.id.List_view_Numbers);
+        Log.d(ACTIVITY_MONITOR, "MONITORING THE NUMBERS ACTIITY");
+        ListView lstV = (ListView) findViewById(R.id.List_view_Numbers);
 
-lstV.setAdapter(ling);
+        lstV.setAdapter(ling);
+
+
+
+        //TextView textView = findViewById(R.id.TxT1)
     }
 }

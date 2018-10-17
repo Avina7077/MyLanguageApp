@@ -20,14 +20,26 @@ public class MainActivity extends AppCompatActivity {
     public void colorButton(View view)
     {
         Intent intent;
-        intent = new Intent(this, ColorActivity.class);
+        intent = new Intent(MainActivity.this, ColorActivity.class);
         startActivity(intent);
     }
 
     public void NumbersButton(View view)
     {
         Intent intent1;
-        intent1 = new Intent(this, NumbersActivity.class);
+        intent1 = new Intent( MainActivity.this, NumbersActivity.class);
+        startActivity(intent1);
+    }
+    public void PhrasesButton(View view)
+    {
+        Intent intent1;
+        intent1 = new Intent(MainActivity.this, PhrasesActivity.class);
+        startActivity(intent1);
+    }
+    public void FamilyButton(View view)
+    {
+        Intent intent1;
+        intent1 = new Intent(MainActivity.this, FamilyActivity.class);
         startActivity(intent1);
     }
 }

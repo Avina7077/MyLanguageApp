@@ -17,6 +17,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
+        android:onClick="PhrasesButton"
         android:background="@color/category_phrases"
         android:text="Phrases" />
 
@@ -33,5 +34,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:background="@color/category_family"
-        android:text="Family" />
+        android:text="Family"
+        android:onClick="FamilyButton"/>
 </LinearLayout>
