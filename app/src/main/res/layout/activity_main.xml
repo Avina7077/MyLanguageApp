@@ -8,32 +8,40 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
+        android:padding="16dp"
+        android:textSize="26sp"
+        android:textStyle="bold"
         android:background="@color/category_numbers"
         android:onClick="NumbersButton"
         android:text="Numbers" />
 
     <TextView
+        android:textStyle="bold"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
+        android:padding="16dp"
+        android:textSize="26sp"
         android:onClick="PhrasesButton"
         android:background="@color/category_phrases"
         android:text="Phrases" />
 
     <TextView
+        android:textStyle="bold"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
+        android:padding="16dp"
+        android:textSize="26sp"
         android:background="@color/category_colors"
         android:onClick="colorButton"
         android:text="Colors" />
 
     <TextView
+        android:textStyle="bold"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:background="@color/category_family"
+        android:padding="16dp"
+        android:textSize="26sp"
+                android:background="@color/category_family"
         android:text="Family"
         android:onClick="FamilyButton"/>
 </LinearLayout>

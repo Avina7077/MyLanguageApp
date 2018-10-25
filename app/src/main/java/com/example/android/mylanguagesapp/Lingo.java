@@ -40,7 +40,10 @@ public class Lingo {
         return mImageId;
     }
 
+
     public boolean hasImage() {
+
         return (mImageId != NO_IMAGE);
     }
+
 }
