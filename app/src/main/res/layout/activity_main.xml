@@ -11,8 +11,8 @@
         android:padding="16dp"
         android:textSize="26sp"
         android:textStyle="bold"
-        android:background="@color/category_numbers"
         android:onClick="NumbersButton"
+        android:background="@color/category_numbers"
         android:text="Numbers" />
 
     <TextView
@@ -21,8 +21,8 @@
         android:layout_height="wrap_content"
         android:padding="16dp"
         android:textSize="26sp"
-        android:onClick="PhrasesButton"
         android:background="@color/category_phrases"
+        android:onClick="PhrasesButton"
         android:text="Phrases" />
 
     <TextView
@@ -38,10 +38,10 @@
     <TextView
         android:textStyle="bold"
         android:layout_width="match_parent"
+        android:background="@color/category_family"
         android:layout_height="wrap_content"
         android:padding="16dp"
         android:textSize="26sp"
-                android:background="@color/category_family"
         android:text="Family"
         android:onClick="FamilyButton"/>
 </LinearLayout>

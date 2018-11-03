@@ -8,4 +8,5 @@
     <string name="activity_phrases">Phrases Activity</string>
     <string name="family_list">Family Activity</string>
     <string name="ImageBox">This is the Image</string>
+    <string name="text_container">i</string>
 </resources>

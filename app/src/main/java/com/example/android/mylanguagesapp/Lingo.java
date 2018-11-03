@@ -10,20 +10,23 @@ public class Lingo {
     private String mdefaultTranslation;
 
     private int mImageId = NO_IMAGE;
-
+private int mAudioId;
 
     private static final int NO_IMAGE = -1;
 
-    public Lingo(String IgboTranslation, String defaultTranslation) {
+    public Lingo(String IgboTranslation, String defaultTranslation, int audioId)
+    {
         mdefaultTranslation = IgboTranslation;
         mIgboTranslation = defaultTranslation;
+        mAudioId=audioId;
 
     }
-
-    public Lingo(String IgboTranslation, String defaultTranslation, int imgView) {
+    public Lingo(String IgboTranslation, String defaultTranslation, int imgView,int audioId) {
         mdefaultTranslation = IgboTranslation;
         mIgboTranslation = defaultTranslation;
         this.mImageId = imgView;
+
+        mAudioId=audioId;
     }
 
     public String getTheIgboTranslation() {
@@ -41,9 +44,7 @@ public class Lingo {
     }
 
 
-    public boolean hasImage() {
+    public boolean hasImage() {return (mImageId != NO_IMAGE);}
 
-        return (mImageId != NO_IMAGE);
-    }
-
+    public int getAudioId(){return mAudioId;}
 }

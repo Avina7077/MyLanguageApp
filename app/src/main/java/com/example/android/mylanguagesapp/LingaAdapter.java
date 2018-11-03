@@ -1,5 +1,6 @@
 package com.example.android.mylanguagesapp;
 
+import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,9 +15,10 @@ import java.util.ArrayList;
 
 public class LingaAdapter extends ArrayAdapter<Lingo> {
 
-
-    public LingaAdapter( android.content.Context context, ArrayList<Lingo> lingoArray) {
+private  int mColorResourceId;
+    public LingaAdapter( android.content.Context context, ArrayList<Lingo> lingoArray, int colorResourceId) {
         super(context, 0, lingoArray);
+    mColorResourceId=colorResourceId;
     }
 
     @Override
@@ -52,6 +54,12 @@ public class LingaAdapter extends ArrayAdapter<Lingo> {
 
 
         }
+
+       // make arrangements to set the color for each activity list
+
+        View view= listItemView.findViewById(R.id.text_container);
+        int color= ContextCompat.getColor(getContext(), mColorResourceId);
+        view.setBackgroundColor(color);
         return listItemView;
     }
 }
