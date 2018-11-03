@@ -26,16 +26,16 @@ public class FamilyActivity extends AppCompatActivity {
 
 
         final ArrayList<Lingo> lingoArray = new ArrayList<Lingo>();
-        lingoArray.add(new Lingo ("ofu","one", R.drawable.family_father, R.raw.midnite_same_i_ah_one));
-        lingoArray.add(new Lingo("Abou","two",R.drawable.family_mother, R.raw.midnite_same_i_ah_one));
-        lingoArray.add(new Lingo("Ato","three",R.drawable.family_son, R.raw.midnite_same_i_ah_one));
-        lingoArray.add(new Lingo("Ano","four",R.drawable.family_daughter, R.raw.midnite_same_i_ah_one));
-        lingoArray.add(new Lingo("Ise","five",R.drawable.family_younger_brother, R.raw.midnite_same_i_ah_one));
-        lingoArray.add(new Lingo("Isi","six",R.drawable.family_younger_sister, R.raw.midnite_same_i_ah_one));
-        lingoArray.add(new Lingo("Asa","seven",R.drawable.family_older_brother, R.raw.midnite_same_i_ah_one));
-        lingoArray.add(new Lingo("Asato","eight",R.drawable.family_older_sister, R.raw.midnite_same_i_ah_one));
-        lingoArray.add(new Lingo("Itenani","nine",R.drawable.family_grandfather, R.raw.midnite_same_i_ah_one));
-        lingoArray.add(new Lingo("Iri","ten",R.drawable.family_grandmother, R.raw.midnite_same_i_ah_one));
+        lingoArray.add(new Lingo ("Nnanyi","Father", R.drawable.family_father, R.raw.midnite_same_i_ah_one));
+        lingoArray.add(new Lingo("Nneanyi","Mother",R.drawable.family_mother, R.raw.midnite_same_i_ah_one));
+        lingoArray.add(new Lingo("Nwa Nwoke","Son",R.drawable.family_son, R.raw.midnite_same_i_ah_one));
+        lingoArray.add(new Lingo("Nwa Nwanyi","Daughter",R.drawable.family_daughter, R.raw.midnite_same_i_ah_one));
+        lingoArray.add(new Lingo("Nwanne Nwoke nke Obele","Junior Brother",R.drawable.family_younger_brother, R.raw.midnite_same_i_ah_one));
+        lingoArray.add(new Lingo("Nwanne Nwani nke Obele","Junior Sister",R.drawable.family_younger_sister, R.raw.midnite_same_i_ah_one));
+        lingoArray.add(new Lingo("Nwanne Nwoke nke torom","seven",R.drawable.family_older_brother, R.raw.midnite_same_i_ah_one));
+        lingoArray.add(new Lingo("Nwanne Nwani nke torom","eight",R.drawable.family_older_sister, R.raw.midnite_same_i_ah_one));
+        lingoArray.add(new Lingo("Nnam Ochie","GrandFather",R.drawable.family_grandfather, R.raw.midnite_same_i_ah_one));
+        lingoArray.add(new Lingo("Nnem Ochie","GrandFather",R.drawable.family_grandmother, R.raw.midnite_same_i_ah_one));
 
         LingaAdapter ling = new LingaAdapter(this, lingoArray, R.color.category_family);
 
